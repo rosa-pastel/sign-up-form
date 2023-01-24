@@ -6,7 +6,6 @@ function checkPasswords(){
     else{
         removePasswordWarning(error_element)
     }
-    console.log(1)
 }
 
 function displayPasswordWarning(error_element){
