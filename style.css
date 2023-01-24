@@ -90,7 +90,7 @@ button.create-account{
     width: 15rem;
     height: 3rem;
     border-radius: 5px;
-    border:
+    border: solid 3px rgb(219, 31, 97);
 }
 button.create-account:hover{
     cursor: pointer;
@@ -116,7 +116,8 @@ form h1{
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin: 20px 0;
+    margin: 20px;
+    margin-left: 0;
     height: 50px;
 }
 .form-control input{
