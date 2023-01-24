@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    color: rgb(219, 31, 97);
+}
+@font-face {
+    font-family: explore;
+    src: url(./assets/fonts/AgetaChubbyDemo-O7L6.ttf)
+}
+.hero{
+    height: 100%;
+    width: 750px;
+    background-image: url(./assets/images/jezael-melgoza-7H77FWkK_x4-unsplash.jpg);
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+}
+.hero h1{
+    background-color: rgb(190, 235, 255, 35%);
+    color: black;
+    font-size: calc(7vmin + 30px);
+    text-align: center;
+    margin-bottom: 100px;
+    width: 100%;
+    padding: 0px 25px;
+    font-family: explore;
+    position: relative;
+}
+.hero h1::after{
+    content: "TM";
+    font-size: 15%;
+    font-family: monospace;
+    position: absolute;
+    top: 15px;
+}
+.hero p{
+    margin: 20px;
+}
+.hero *{
+    color: white;
+}
+.content-container{
+    background-color: black;
+    box-shadow: 0 5px 30px 2px rgb(219, 31, 97, 50%);
+    padding: 30px;
+    padding-left: calc(50px + 5%);
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+.content-container>*{
+    width: 100%;
+}
+.biggest-container{
+    background-color: black;
+    flex: 1;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.biggest-container .button-div,
+.biggest-container p{
+    margin-left: calc(50px + 5%);
+}
+.biggest-container .or-log-in{
+    margin-top: 30px;
+}
+.slogan{
+    font-size: calc(10px + 1.2vw);
+    max-width: 500px;
+    padding-right: 20px;
+}
+button.create-account{
+    background-color: rgb(219, 31, 97);
+    color: white;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 5px;
+    border:
+}
+button.create-account:hover{
+    cursor: pointer;
+    color: rgb(219, 31, 97);
+    background-color: transparent;
+}
+.or-log-in a{
+    color: rgb(190, 235, 255);
+    text-decoration: none;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    z-index: 0;   
+}
+form h1{
+    width: 100%;
+    padding-bottom: 10px;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 20px 0;
+    height: 50px;
+}
+.form-control input{
+    width: 250px;
+    padding: 2px;
+    border: 2px palevioletred solid;
+}
+.form-control input:focus{
+    box-shadow: 0 0 10px 3px palevioletred;
+    outline: none;
+}
+.form-row{
+    width: min(650px, 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+p.error::before{
+    content: "*";
+}
+p.no-error::before{
+    content: "";
+}
+input.error{
+    box-shadow: 0 0 10px 3px rgb(190, 235, 255);
+    border: 2px rgb(190, 235, 255) solid;
+}
+input.error:focus{
+    box-shadow: 0 0 10px 3px rgb(190, 235, 255);
+    border: 2px rgb(190, 235, 255) solid;
+}
+input.error + p{
+    color: rgb(190, 235, 255);
+}
