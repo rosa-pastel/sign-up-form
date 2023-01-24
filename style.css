@@ -18,26 +18,25 @@ body{
 }
 .hero{
     height: 100%;
-    width: 750px;
     background-image: url(./assets/images/jezael-melgoza-7H77FWkK_x4-unsplash.jpg);
     background-size: cover;
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     z-index: 1;
+    flex: auto;
 }
 .hero h1{
     background-color: rgb(190, 235, 255, 35%);
     color: black;
-    font-size: calc(7vmin + 30px);
+    font-size: calc(7vmin + 3rem);
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 10vh;
     width: 100%;
-    padding: 0px 25px;
     font-family: explore;
     position: relative;
+    padding: 0 25px;
 }
 .hero h1::after{
     content: "TM";
@@ -47,7 +46,7 @@ body{
     top: 15px;
 }
 .hero p{
-    margin: 20px;
+    padding-bottom: 20px;
 }
 .hero *{
     color: white;
@@ -55,22 +54,17 @@ body{
 .content-container{
     background-color: black;
     box-shadow: 0 5px 30px 2px rgb(219, 31, 97, 50%);
-    padding: 30px;
+    padding: 5vmin 0;
     padding-left: calc(50px + 5%);
-    margin: 30px 0;
-    display: flex;
-    flex-direction: column;
-}
-.content-container>*{
-    width: 100%;
+    margin: calc(5vmin + 15px) 0;
 }
 .biggest-container{
     background-color: black;
-    flex: 1;
+    padding: calc(5vmin + 15px) 0;
     display: flex;
-    height: 100%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    flex: auto;
 }
 .biggest-container .button-div,
 .biggest-container p{
@@ -80,15 +74,15 @@ body{
     margin-top: 30px;
 }
 .slogan{
-    font-size: calc(10px + 1.2vw);
-    max-width: 500px;
-    padding-right: 20px;
+    font-size: calc(1rem + 1vw);
+    max-width: 600px;
+    padding-right: calc(50px + 5%);
 }
 button.create-account{
     background-color: rgb(219, 31, 97);
     color: white;
-    width: 15rem;
-    height: 3rem;
+    width: 15em;
+    height: 3em;
     border-radius: 5px;
     border: solid 3px rgb(219, 31, 97);
 }
@@ -103,22 +97,20 @@ button.create-account:hover{
 }
 form{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
     height: 100%;
+    padding-right: calc(50px + 5%);
     z-index: 0;   
 }
 form h1{
     width: 100%;
-    padding-bottom: 10px;
 }
 .form-control{
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin: 20px;
-    margin-left: 0;
-    height: 50px;
+    gap: 5px;
+    margin-top: 20px;
 }
 .form-control input{
     width: 250px;
@@ -130,7 +122,8 @@ form h1{
     outline: none;
 }
 .form-row{
-    width: min(650px, 100%);
+    width: min(600px, 100%);
+    column-gap: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
