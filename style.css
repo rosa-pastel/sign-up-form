@@ -116,6 +116,7 @@ form h1{
     width: 250px;
     padding: 2px;
     border: 2px palevioletred solid;
+    border-radius: none;
 }
 .form-control input:focus{
     box-shadow: 0 0 10px 3px palevioletred;
