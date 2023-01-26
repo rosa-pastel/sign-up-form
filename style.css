@@ -119,7 +119,7 @@ form h1{
 }
 .form-control input:focus{
     box-shadow: 0 0 10px 3px palevioletred;
-    outline: none;
+    outline: 1px palevioletred solid;
 }
 .form-row{
     width: min(600px, 100%);
